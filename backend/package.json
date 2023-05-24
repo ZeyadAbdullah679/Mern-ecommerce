@@ -5,7 +5,11 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node app.js",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd client && npm run start"
   },
   "keywords": [],
   "author": "",
