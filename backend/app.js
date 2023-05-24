@@ -28,6 +28,6 @@ mongoose
     console.log(err);
   });
 
-// routes
-import routes from "./routes/index.js";
-routes(app);
+app.get("/", (req, res) => {
+  res.status(201).json({ message: "Connected to Backend!" });
+});
