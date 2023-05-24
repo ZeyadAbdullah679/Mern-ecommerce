@@ -13,9 +13,9 @@ app.use(cors(corsOptions));
 
 // connect MongoDB
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect("mongodb+srv://pizzaTeam:test1234@cluster0.6e9bp37.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
-    const PORT = process.env.PORT || 8000;
+    const PORT = 4000 || 8000;
     app.listen(PORT, () => {
       console.log(`App is Listening on PORT ${PORT}`);
     });
